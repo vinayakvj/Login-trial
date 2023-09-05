@@ -1,0 +1,39 @@
+.image-container {
+    height: 100vh;
+    width: fit-content;
+    
+}
+
+.image {
+    height: 100%;
+    width: 420px;
+    
+}
+
+.login {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.single {
+    margin: 0;
+}
+
+.login-form .form-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 50%;
+    margin-left: 400px;
+    
+
+}
