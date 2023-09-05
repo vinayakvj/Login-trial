@@ -4,6 +4,17 @@ import "./login.css";
 import Input from '../components/Input';
 
 function Login() {
+ 
+
+  const submitHandler=(event)=>{
+    event.preventDefault()
+    const form = document.querySelector('form')
+    const data = new FormData(form);
+    for (const pair of data.entries()) {
+      console.log(pair)
+    }
+  }
+
   return (
     <div className='login'>
       <div className='image-container'>
@@ -14,10 +25,11 @@ function Login() {
           <h1 className='single'>Hey,</h1>
           <h1 className='single'>Let's Start</h1>
           <p className='single'>Please Login to your account</p>
-          <form>
-          <Input name='username' type='text'/>
-          <Input name='password' type='password'/>
-          <input  type='submit'/>
+          <form className='form-flex  ' id='form'>
+          <Input name='Email'  type='email' required pattern=".+@gmail\.com" size="30"/>
+          <Input name='Password' type='password'/>
+          <a className=' forgot'>Forgot password?</a>
+          <button  className='button' type='submit' onClick={(e)=>submitHandler(e)}>Login</button>
           </form>
           
         </div>
