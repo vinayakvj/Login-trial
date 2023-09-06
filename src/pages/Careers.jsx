@@ -1,10 +1,10 @@
 import React from 'react'
-import DashBoard from '../components/DashBoard'
+import SideBar from '../components/SideBar'
 
 function Careers() {
   return (
     <div>
-        <DashBoard />
+        <SideBar />
         <div className='main'>
             Careers
         </div>

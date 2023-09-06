@@ -1,11 +1,12 @@
 import React from 'react'
 import "./student.css"
-import DashBoard from '../components/DashBoard'
+import SideBar from '../components/SideBar'
 
 function Students() {
+  console.log("student");
   return (
+    
     <div>
-        <DashBoard />
         <div className='main'> 
         Students
         </div>

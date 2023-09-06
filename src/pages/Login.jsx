@@ -18,7 +18,7 @@ function Login() {
       console.log(pair)
     }
 
-    nav("./students");
+    nav("./dashboard/students");
 
   }
 

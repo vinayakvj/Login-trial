@@ -6,7 +6,7 @@ import Signup from './pages/Signup';
 import Book from './pages/Book';
 import BookDetail from './pages/BookDetail';
 import NotFound from './pages/NotFound';
-import DashBoard from './components/DashBoard';
+import DashBoard from './components/SideBar';
 import Students from './pages/Students';
 import Content from './pages/Content';
 import Careers from './pages/Careers';
@@ -29,12 +29,19 @@ function App() {
       </nav> */}
       <Routes>
         <Route path="/" element={<Login />}/>
-        <Route path='/signup' element={<Signup />}/>
-        <Route path="/dashboard" element={<DashBoard />} />
-        <Route path='/students' element={<Students />} />
+        {/* <Route path='/signup' element={<Signup />}/> */}
+
+        <Route path="dashboard" element={<DashBoard />}>
+          <Route path='students' element={<Students />}/>
+          <Route path='content' element={<Content />}/>
+          <Route path='Careers' element={<Careers />}/>
+          <Route path='Message' element={<Message />}/>
+        </Route>
+
+        {/* <Route path='/students' element={<Students />} />
         <Route path='/content' element={<Content />}/>
         <Route path='/Careers' element={<Careers />}/>
-        <Route path='/Message' element={<Message />}/>
+        <Route path='/Message' element={<Message />}/> */}
 
         <Route path='/books' >
           <Route index element={<Book />}/>

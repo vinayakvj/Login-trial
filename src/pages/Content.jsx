@@ -1,11 +1,11 @@
 import React from 'react'
-import DashBoard from '../components/DashBoard'
+import SideBar from '../components/SideBar'
 import "./content.css";
 
 function Content() {
   return (
     <div>
-        <DashBoard />
+        <SideBar />
         <div className='cont'>
         Content
         </div>

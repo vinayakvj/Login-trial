@@ -1,11 +1,11 @@
 import React from 'react'
-import DashBoard from '../components/DashBoard'
+import SideBar from '../components/SideBar'
 import "./message.css"
 
 function Message() {
   return (
     <div>
-        <DashBoard />
+        <SideBar />
     <div className='message'>
     Message
     </div>
