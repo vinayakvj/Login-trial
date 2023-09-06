@@ -2,17 +2,24 @@ import React from 'react'
 import image from "../assets/Group 166.png";
 import "./login.css";
 import Input from '../components/Input';
+import { Navigate ,useNavigate} from 'react-router-dom'
 
 function Login() {
+  const nav = useNavigate();
  
-
   const submitHandler=(event)=>{
+
+    
+
     event.preventDefault()
     const form = document.querySelector('form')
     const data = new FormData(form);
     for (const pair of data.entries()) {
       console.log(pair)
     }
+
+    nav("./students");
+
   }
 
   return (
@@ -29,7 +36,10 @@ function Login() {
           <Input name='Email'  type='email' required pattern=".+@gmail\.com" size="30"/>
           <Input name='Password' type='password'/>
           <a className=' forgot'>Forgot password?</a>
-          <button  className='button' type='submit' onClick={(e)=>submitHandler(e)}>Login</button>
+          <button  className='button' type='submit' onClick={(e)=>{
+            
+            submitHandler(e)}}>Login
+          </button>
           </form>
           
         </div>

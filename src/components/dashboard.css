@@ -1,0 +1,27 @@
+.dashboard {
+    position: absolute;
+    background-color: green;
+    width: 200px;
+    height: 100vh;
+}
+
+.navs {
+    position: relative;
+    margin-left: 50px;
+    color: white;
+    font-size: large;
+    font-weight: 200;
+    margin-top: 150px;
+    
+}
+
+.navs .tags {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
