@@ -13,7 +13,7 @@ function SideBar() {
     name: "Content"
   },
   {
-    link: "/dashboard/careers",
+    link: "/dashboard/Careers",
     name: "Careers"
   },
   {

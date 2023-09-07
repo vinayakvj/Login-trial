@@ -5,7 +5,6 @@ import "./message.css"
 function Message() {
   return (
     <div>
-        <SideBar />
     <div className='message'>
     Message
     </div>

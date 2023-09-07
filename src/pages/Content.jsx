@@ -5,7 +5,6 @@ import "./content.css";
 function Content() {
   return (
     <div>
-        <SideBar />
         <div className='cont'>
         Content
         </div>

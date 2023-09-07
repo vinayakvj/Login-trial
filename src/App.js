@@ -6,7 +6,7 @@ import Signup from './pages/Signup';
 import Book from './pages/Book';
 import BookDetail from './pages/BookDetail';
 import NotFound from './pages/NotFound';
-import DashBoard from './components/SideBar';
+import DashBoard from './pages/DashBoard';
 import Students from './pages/Students';
 import Content from './pages/Content';
 import Careers from './pages/Careers';
