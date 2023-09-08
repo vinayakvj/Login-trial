@@ -1,6 +1,22 @@
 .main {
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  width: 500px;
+  border: 1px solid;
+}
+
+td {
+  text-align: center;
+}
+
+tr {
+  border: 1px solid;
+}
+
+tr :hover {
+  cursor: pointer;
 }
