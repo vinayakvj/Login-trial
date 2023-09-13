@@ -1,4 +1,6 @@
 .main {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,4 +21,13 @@ tr {
 
 tr :hover {
   cursor: pointer;
+}
+
+.class-card-layout {
+  display: flex;
+}
+
+.stud-content {
+  width: 100%;
+  height: 100%;
 }

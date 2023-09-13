@@ -1,15 +1,28 @@
-.dash {
+/* .dash {
   display: flex;
   flex-direction: row;
   flex: 1;
   justify-content: space-between;
+} */
+
+.dash {
+  height: 100vh;
+  width: 98vw;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 10% 90%;
+  grid-template-areas:
+    "sidebar navbar"
+    "sidebar content"
+    "sidebar content";
 }
 
 .outlet {
-  display: flex;
-  flex: 1;
-  height: 500px;
-  width: 1000px;
-  margin-top: 100px;
-  max-width: 1000px;
+  grid-area: content;
+  height: 100%;
+  width: 100%;
+}
+
+.nav {
+  border-bottom: solid 1px black;
 }

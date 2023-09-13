@@ -9,6 +9,10 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
+import StudCard from "../components/StudCard";
+import Group from "../assets/Group.svg";
+import reading from "../assets/reading 1.svg";
+import vector from "../assets/Vector.svg";
 
 function Students() {
   const [data, setData] = useState([]);
@@ -74,7 +78,12 @@ function Students() {
       <div className="main">
         <div>
           {/* <Table dataSource={data} columns={columns} /> */}
-          <div>
+          <div className="stud-content">
+            <div className="class-card-layout">
+              <StudCard img={reading} color="#F3F4FF" />
+              <StudCard img={Group} color="#ECF2E8" />
+              <StudCard img={vector} color="#FFF4E0" />
+            </div>
             <h2>Data Table</h2>
             {/* <table>
           <thead>
